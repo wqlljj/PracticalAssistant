@@ -1,0 +1,472 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sx.practicalassistant.view.fragment.SettingFragment">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="扫描"
+                    android:textColor="#0A2224"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/drawer_gray" />
+
+            <LinearLayout
+                android:id="@+id/scan_audio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/comm_bg_selector" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="扫描本地音频文件"
+                    android:textColor="#747474"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="扫描"
+                    android:background="@drawable/setting_bt_bg"
+                    android:textColor="#747474"
+                    android:id="@+id/scan_audio_bt"
+                    android:layout_margin="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上次更新时间："
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_gravity="bottom"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scan_audio_time"
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="15dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/drawer_gray" />
+
+            <LinearLayout
+                android:id="@+id/scan_video"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/comm_bg_selector" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="扫描本地视频文件"
+                    android:textColor="#747474"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="扫描"
+                    android:background="@drawable/setting_bt_bg"
+                    android:textColor="#747474"
+                    android:id="@+id/scan_video_bt"
+                    android:layout_margin="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上次更新时间："
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/scan_video_time"
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="15dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/drawer_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="上传"
+                    android:textColor="#0A2224"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/drawer_gray" />
+
+            <LinearLayout
+                android:id="@+id/upload_audio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/comm_bg_selector" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="上传音频关键词"
+                    android:textColor="#747474"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="上传"
+                    android:background="@drawable/setting_bt_bg"
+                    android:textColor="#747474"
+                    android:id="@+id/upload_audio_bt"
+                    android:layout_margin="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上次更新时间："
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/upload_audio_time"
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="15dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/drawer_gray" />
+
+            <LinearLayout
+                android:id="@+id/upload_video"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/comm_bg_selector" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="上传视频关键词"
+                    android:textColor="#747474"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="上传"
+                    android:background="@drawable/setting_bt_bg"
+                    android:textColor="#747474"
+                    android:id="@+id/upload_video_bt"
+                    android:layout_margin="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上次更新时间："
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/upload_video_time"
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="15dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/drawer_gray" />
+            <LinearLayout
+                android:id="@+id/upload_contact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/comm_bg_selector" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="上传通讯录人名"
+                    android:textColor="#747474"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="上传"
+                    android:background="@drawable/setting_bt_bg"
+                    android:textColor="#747474"
+                    android:id="@+id/upload_contact_bt"
+                    android:layout_margin="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上次更新时间："
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/upload_contact_time"
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="15dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/drawer_gray" />
+            <LinearLayout
+                android:id="@+id/upload_appname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/comm_bg_selector" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="上传应用名"
+                    android:textColor="#747474"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="上传"
+                    android:background="@drawable/setting_bt_bg"
+                    android:textColor="#747474"
+                    android:id="@+id/upload_appname_bt"
+                    android:layout_margin="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上次更新时间："
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/upload_appname_time"
+                        android:textSize="8sp"
+                        android:textColor="#747474"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="15dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/drawer_gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="自定义"
+                    android:textColor="#0A2224"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/drawer_gray" />
+            <LinearLayout
+                android:id="@+id/custom_userwords"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/comm_bg_selector" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="自定义关键词"
+                    android:textColor="#747474"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/drawer_gray" />
+            <LinearLayout
+                android:id="@+id/start_hello"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/comm_bg_selector" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="启动问候语（点击自定义）"
+                    android:textColor="#747474"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="开启"
+                    android:background="@drawable/setting_bt_bg"
+                    android:textColor="#747474"
+                    android:id="@+id/start_hello_bt"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+           </LinearLayout>
+    </ScrollView>
+</FrameLayout>

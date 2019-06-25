@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:background="@drawable/mic_bg"
+    >
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/textView"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="14dp"-->
+        <!--android:text="我是Widgets"-->
+        <!--android:clickable="true"-->
+        <!--/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_saying"
+        android:id="@+id/image"
+        />
+
+</RelativeLayout>

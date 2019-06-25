@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tool_bar_top_padding">0dp</dimen>
+    <dimen name="part_voice_width">15dp</dimen>
+    <dimen name="part_voice_height">15dp</dimen>
+    <dimen name="voice_iv_voice_anim">55dp</dimen>
+    <dimen name="tool_bar_top_height">60dp</dimen>
+    <dimen name="voice_llt_bottom_height1">90dp</dimen>
+    <dimen name="chat_tv_date_textSize">10sp</dimen>
+    <dimen name="chat_tv_content_textSize">18sp</dimen>
+    <dimen name="chat_llt_magin_max">40dp</dimen>
+    <dimen name="chat_llt_magin_min">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
